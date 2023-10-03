@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50sp"
+        android:text="User Login"
+        android:textColor="#1565C0"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter mobile number"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="20sp"
+        />
+    <Button
+        android:id="@+id/sendOtp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="send OTP"
+        android:layout_below="@id/mobile"
+        android:backgroundTint="#5D168F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+
+        />
+
+    <EditText
+        android:id="@+id/verifyOtp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:layout_below="@id/sendOtp"
+        android:layout_marginTop="17sp"
+
+        />
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:layout_below="@id/verifyOtp"
+        android:backgroundTint="#FA2A6C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+
+        />
+</RelativeLayout>
